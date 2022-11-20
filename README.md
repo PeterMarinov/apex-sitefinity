@@ -22,3 +22,8 @@ It is best to host the project in IIS. Follow this guide to set the project in I
 <add connectionString="data source=BG-1WS107\MSSQL2017;Integrated Security=SSPI;initial catalog=apex_db" name="Sitefinity" />
 ```
 
+# Admin Credentials
+
+* Username - admin@admin.local
+* Password - password
+
