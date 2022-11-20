@@ -1,0 +1,17 @@
+﻿body {
+    
+}
+
+.sfPageContainer div[placeholderid="Main"]:hover {
+    border-color: var(--primary) !important;
+}
+
+.sfPageContainer div[placeholderid="Main"]:hover:before {
+    content: "Main Placeholder";
+    color: var(--primary);
+    background-color: #fff; 
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
