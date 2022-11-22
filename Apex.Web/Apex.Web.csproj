@@ -1855,7 +1855,6 @@
     <Content Include="ResourcePackages\Apex\MVC\Views\JavaScript\Index.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\LanguageSelector\LanguageSelector.DropDownMenu.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\LanguageSelector\LanguageSelector.LanguageLinks.cshtml" />
-    <Content Include="ResourcePackages\Apex\MVC\Views\Layouts\main.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\Lists\Detail.DetailPage.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\Lists\List.AnchorList.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\Lists\List.ExpandableList.cshtml" />
@@ -1914,6 +1913,7 @@
     <Content Include="ResourcePackages\Apex\razorgenerator.directives" />
     <Content Include="ResourcePackages\Apex\README.md" />
     <Content Include="ResourcePackages\Apex\assets\src\css\backend\page-editor.css" />
+    <Content Include="ResourcePackages\Apex\MVC\Views\Layouts\base.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
