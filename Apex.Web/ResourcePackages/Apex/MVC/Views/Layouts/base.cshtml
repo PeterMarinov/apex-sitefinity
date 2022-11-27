@@ -38,11 +38,6 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    @Html.SfPlaceHolder("Header")
-    @Html.SfPlaceHolder("Main")
-    @Html.SfPlaceHolder("Footer")
-
     @if (!SystemManager.IsDesignMode || SystemManager.IsPreviewMode)
     {
         <input type="hidden" id="isPage" />
@@ -51,10 +46,10 @@
             <div class="spinner-grow text-primary" role="status"></div>
         </div>
     }
-   
-    <!-- Navbar Start -->
-    
-    <!-- Navbar End -->
+
+    @Html.SfPlaceHolder("Header")
+    @Html.SfPlaceHolder("Main")
+
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -640,7 +635,7 @@
         </div>
     </div>
     <!-- Testimonial End -->
-    <!-- Footer Start -->
+
     <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
          data-wow-delay="0.1s">
         <div class="container py-5">
@@ -699,24 +694,9 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                        <br />Distributed By:
-                        <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @Html.SfPlaceHolder("Footer")
     </div>
-    <!-- Footer End -->
-    <!-- Back to Top -->
+
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
         <i class="bi bi-arrow-up"></i>
     </a>
