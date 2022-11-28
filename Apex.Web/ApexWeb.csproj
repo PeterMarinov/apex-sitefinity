@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Apex.Web</RootNamespace>
-    <AssemblyName>Apex.Web</AssemblyName>
+    <RootNamespace>ApexWeb</RootNamespace>
+    <AssemblyName>ApexWeb</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -1311,6 +1311,8 @@
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="AzureWebRole.cs" />
+    <Compile Include="Mvc\Controllers\SocialLinksController.cs" />
+    <Compile Include="Mvc\Models\SocialLinksModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1508,6 +1510,8 @@
     <Content Include="ResourcePackages\Apex\assets\src\scss\bootstrap\scss\_type.scss" />
     <Content Include="ResourcePackages\Apex\assets\src\scss\bootstrap\scss\_utilities.scss" />
     <Content Include="ResourcePackages\Apex\assets\src\scss\bootstrap\scss\_variables.scss" />
+    <Content Include="Mvc\Views\SocialLinks\Header.cshtml" />
+    <Content Include="Mvc\Views\SocialLinks\Footer.cshtml" />
     <None Include="packages.config" />
     <Content Include="Sitefinity\ExternalLibraries\LibWebP\libwebp_x86.sflib" />
     <Content Include="Sitefinity\ExternalLibraries\LibWebP\libwebp_x64.sflib" />
@@ -1914,6 +1918,8 @@
     <Content Include="ResourcePackages\Apex\README.md" />
     <Content Include="ResourcePackages\Apex\assets\src\css\backend\page-editor.css" />
     <Content Include="ResourcePackages\Apex\MVC\Views\Layouts\base.cshtml" />
+    <Content Include="ResourcePackages\Apex\MVC\Views\SocialLinks\Footer.cshtml" />
+    <Content Include="ResourcePackages\Apex\MVC\Views\SocialLinks\Header.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
