@@ -1127,6 +1127,7 @@
     <Content Include="App_Data\RadCaptcha\Y.wav" />
     <Content Include="App_Data\RadCaptcha\Z.wav" />
     <Content Include="App_Data\Sitefinity\TrackingConsent\consentDialog.html" />
+    <Content Include="Global.asax" />
     <Content Include="ResourcePackages\Apex\assets\src\css\bootstrap.min.css" />
     <Content Include="ResourcePackages\Apex\assets\src\css\style.css" />
     <Content Include="ResourcePackages\Apex\assets\src\img\about.jpg" />
@@ -1310,10 +1311,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="App_Start\SitefinityConfig.cs" />
     <Compile Include="AzureWebRole.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Mvc\Controllers\SocialLinksController.cs" />
     <Compile Include="Mvc\Models\SocialLinksModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sitefinity\Custom\DevModeActionInvoker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminApp\vendor.f2de03718af186fd.js.map" />
