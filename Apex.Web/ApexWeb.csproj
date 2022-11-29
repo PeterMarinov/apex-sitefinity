@@ -1316,6 +1316,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mvc\Controllers\ContactInfoController.cs" />
+    <Compile Include="Mvc\Models\ContactInfoModel.cs" />
     <Compile Include="Mvc\Controllers\SocialLinksController.cs" />
     <Compile Include="Mvc\Models\SocialLinksModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1518,6 +1520,7 @@
     <Content Include="ResourcePackages\Apex\assets\src\scss\bootstrap\scss\_variables.scss" />
     <Content Include="Mvc\Views\SocialLinks\Header.cshtml" />
     <Content Include="Mvc\Views\SocialLinks\Footer.cshtml" />
+    <Content Include="Mvc\Views\ContactInfo\Index.cshtml" />
     <None Include="packages.config" />
     <Content Include="Sitefinity\ExternalLibraries\LibWebP\libwebp_x86.sflib" />
     <Content Include="Sitefinity\ExternalLibraries\LibWebP\libwebp_x64.sflib" />
@@ -1926,6 +1929,7 @@
     <Content Include="ResourcePackages\Apex\MVC\Views\Layouts\base.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\SocialLinks\Footer.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\SocialLinks\Header.cshtml" />
+    <Content Include="ResourcePackages\Apex\MVC\Views\ContactInfo\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
