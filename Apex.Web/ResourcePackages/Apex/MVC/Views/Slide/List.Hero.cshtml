@@ -1,0 +1,92 @@
+﻿@model Telerik.Sitefinity.Frontend.DynamicContent.Mvc.Models.DynamicContentListViewModel
+
+@using Telerik.Sitefinity.Frontend.DynamicContent.WidgetTemplates.Fields.Helpers;
+@using Telerik.Sitefinity;
+@using Telerik.Sitefinity.Data.ContentLinks;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@using Telerik.Sitefinity.Frontend.Mvc.Models;
+@using Telerik.Sitefinity.Web.DataResolving;
+@using Telerik.Sitefinity.Model.ContentLinks;
+@using Telerik.Sitefinity.Modules.Pages;
+
+@{
+    var index = 0;
+}
+
+<div class="container-fluid p-0 mb-5 wow fadeIn @Model.CssClass" data-wow-delay="0.1s">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            @foreach (var item in Model.Items)
+            {
+                // TODO - only first is active
+                <div class="carousel-item @GetActiveClass(index)">
+                    @if (item.Fields.Image != null)
+                    {
+                        <img class="w-100" src='@item.Fields.Image.Fields.MediaUrl' alt='@item.Fields.Image.Fields.AlternativeText' title='@item.Fields.Image.Fields.Title' />
+                    }
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10">
+                                    <h5 class="text-light text-uppercase mb-3 animated slideInDown">
+                                        @item.Fields.Teaser
+                                    </h5>
+                                    <h1 class="display-2 text-light mb-3 animated slideInDown">
+                                        @item.Fields.Heading
+                                    </h1>
+                                    <ol class="breadcrumb mb-4 pb-2">
+                                        @foreach (var taxon in item.GetFlatTaxons("Tags"))
+                                        {
+                                            <li class="breadcrumb-item fs-5 @GetTagClass(@taxon.Title.ToString())">
+                                                @taxon.Title.ToString()
+                                            </li>
+                                        }
+                                    </ol>
+                                    @if (!string.IsNullOrEmpty(item.Fields.MoreDetailsUrl))
+                                    {
+                                        <a href="@item.Fields.MoreDetailsUrl" class="btn btn-primary py-3 px-5">More Details</a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>k
+                </div>
+                index++;
+            }
+        </div>
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#header-carousel"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+@helper GetActiveClass(int index)
+{
+    if (index == 0)
+    {
+        @Html.HtmlSanitize("active");
+    }
+}
+
+@helper  GetTagClass(string title)
+{
+    if (title == "Indutrial")
+    {
+        @Html.HtmlSanitize("text-dark");
+    }
+    else
+    {
+        @Html.HtmlSanitize("text-light");
+    }
+}

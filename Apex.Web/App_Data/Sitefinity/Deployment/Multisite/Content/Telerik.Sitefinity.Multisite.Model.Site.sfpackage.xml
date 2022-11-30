@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<atom:entry xmlns:app="http://www.w3.org/2007/app" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cmis="http://docs.oasis-open.org/ns/cmis/core/200908/" xmlns:cmisra="http://docs.oasis-open.org/ns/cmis/restatom/200908/" xmlns:sf="urn:telerik:sitefinity:cmis" xml:base="https://localhost/Sitefinity/CMIS/RestAtom/">
+  <cmisra:object>
+    <cmis:properties>
+      <cmis:propertyId propertyDefinitionId="sf:Id">
+        <cmis:value>8e0216c3-d21e-4e5e-8fe6-ea0327f188f7</cmis:value>
+      </cmis:propertyId>
+      <cmis:propertyString propertyDefinitionId="sf:Name">
+        <cmis:value>Apex</cmis:value>
+      </cmis:propertyString>
+      <cmis:propertyString propertyDefinitionId="sf:StagingUrl">
+        <cmis:value></cmis:value>
+      </cmis:propertyString>
+      <cmis:propertyString propertyDefinitionId="sf:LiveUrl">
+        <cmis:value>localhost</cmis:value>
+      </cmis:propertyString>
+      <cmis:propertyString propertyDefinitionId="sf:CultureKeys" sf:collectionType="IEnumerable" />
+      <cmis:propertyString propertyDefinitionId="sf:DefaultCultureKey">
+        <cmis:value>english-en</cmis:value>
+      </cmis:propertyString>
+      <cmis:propertyId propertyDefinitionId="sf:DefaultFrontendTemplateId">
+        <cmis:value>00000000-0000-0000-0000-000000000000</cmis:value>
+      </cmis:propertyId>
+      <cmis:propertyBoolean propertyDefinitionId="sf:IsOffline">
+        <cmis:value>False</cmis:value>
+      </cmis:propertyBoolean>
+      <cmis:propertyString propertyDefinitionId="sf:DomainAliases" sf:collectionType="IEnumerable" />
+      <cmis:propertyBoolean propertyDefinitionId="sf:RequiresSsl">
+        <cmis:value>False</cmis:value>
+      </cmis:propertyBoolean>
+      <cmis:propertyId propertyDefinitionId="sf:HomePageId">
+        <cmis:value>4dc7beda-ad5f-4b40-830b-e672693ad7ce</cmis:value>
+      </cmis:propertyId>
+      <cmis:propertyId propertyDefinitionId="sf:FrontEndLoginPageId">
+        <cmis:value>00000000-0000-0000-0000-000000000000</cmis:value>
+      </cmis:propertyId>
+      <cmis:propertyString propertyDefinitionId="sf:FrontEndLoginPageUrl" />
+      <cmis:propertyId propertyDefinitionId="sf:SiteMapRootNodeId">
+        <cmis:value>f669d9a7-009d-4d83-ddaa-000000000002</cmis:value>
+      </cmis:propertyId>
+      <cmis:propertyBoolean propertyDefinitionId="sf:IsDefault">
+        <cmis:value>True</cmis:value>
+      </cmis:propertyBoolean>
+      <cmis:propertyString propertyDefinitionId="sf:OfflineSiteMessage">
+        <cmis:value>This page is not accessible</cmis:value>
+      </cmis:propertyString>
+      <cmis:propertyId propertyDefinitionId="sf:OfflinePageToRedirect">
+        <cmis:value>00000000-0000-0000-0000-000000000000</cmis:value>
+      </cmis:propertyId>
+      <cmis:propertyBoolean propertyDefinitionId="sf:RedirectIfOffline">
+        <cmis:value>False</cmis:value>
+      </cmis:propertyBoolean>
+      <cmis:propertyBoolean propertyDefinitionId="sf:IsLocatedInMainMenu">
+        <cmis:value>False</cmis:value>
+      </cmis:propertyBoolean>
+      <cmis:propertyInteger propertyDefinitionId="sf:SiteConfigurationMode">
+        <cmis:value>0</cmis:value>
+      </cmis:propertyInteger>
+      <cmis:propertyId propertyDefinitionId="cmis:objectId">
+        <cmis:value>8e0216c3-d21e-4e5e-8fe6-ea0327f188f7</cmis:value>
+      </cmis:propertyId>
+      <sf:System.Object propertyDefinitionId="sf:Author" />
+      <cmis:propertyString propertyDefinitionId="cmis:objectTypeId">
+        <cmis:value>Telerik.Sitefinity.Multisite.Model.Site</cmis:value>
+      </cmis:propertyString>
+      <cmis:propertyString propertyDefinitionId="sf:LangId">
+        <cmis:value></cmis:value>
+      </cmis:propertyString>
+      <cmis:propertyString propertyDefinitionId="sf:ItemAction">
+        <cmis:value>New</cmis:value>
+      </cmis:propertyString>
+      <cmis:propertyString propertyDefinitionId="sf:SiteConfigurationViewModelProp">
+        <cmis:value>{"DomainAliases":[],"FrontEndLoginPageId":"00000000-0000-0000-0000-000000000000","FrontEndLoginPageUrl":null,"HomePageId":"4dc7beda-ad5f-4b40-830b-e672693ad7ce","Id":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7","IsAllowedStartStop":false,"IsCurrentSite":true,"IsDefault":true,"IsOffline":false,"LiveUrl":"localhost","Name":"Apex","OfflinePageToRedirect":"00000000-0000-0000-0000-000000000000","OfflineSiteMessage":"This page is not accessible","PublicContentCultures":[],"RedirectIfOffline":false,"RequiresSsl":false,"SiteConfigurationMode":0,"SiteMapRootNodeId":"f669d9a7-009d-4d83-ddaa-000000000002","SourcePagesSiteId":"00000000-0000-0000-0000-000000000000","StagingUrl":"","SystemCultures":[{"Culture":"en","DisplayName":"English","FieldSuffix":"","IsDefault":true,"IsSystem":false,"Key":"english-en","ShortName":"en","SitesNames":[],"SitesUsingCultureAsDefault":[],"UICulture":"en"}],"UseSystemCultures":true,"DataSources":[{"AllowMultipleProviders":true,"DependantDataSources":[],"IsChecked":true,"Links":[{"DataSourceName":"Telerik.Sitefinity.Modules.Libraries.LibrariesManager","Id":"c15a002e-e6c4-4e45-b006-bbcd21e191ce","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"OpenAccessDataProvider","ProviderTitle":"Default Libraries","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"}],"Name":"Telerik.Sitefinity.Modules.Libraries.LibrariesManager","SampleLink":{"DataSourceName":"Telerik.Sitefinity.Modules.Libraries.LibrariesManager","Id":"00000000-0000-0000-0000-000000000000","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"apexlibraries","ProviderTitle":"Apex Libraries","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"},"Title":"Libraries"},{"AllowMultipleProviders":true,"DependantDataSources":[],"IsChecked":true,"Links":[{"DataSourceName":"Telerik.Sitefinity.Modules.Events.EventsManager","Id":"d60a400f-ecb4-479a-8e04-3b2707198b94","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"OpenAccessDataProvider","ProviderTitle":"Default Events","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"}],"Name":"Telerik.Sitefinity.Modules.Events.EventsManager","SampleLink":{"DataSourceName":"Telerik.Sitefinity.Modules.Events.EventsManager","Id":"00000000-0000-0000-0000-000000000000","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"apexevents","ProviderTitle":"Apex Events","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"},"Title":"Events"},{"AllowMultipleProviders":true,"DependantDataSources":[],"IsChecked":true,"Links":[{"DataSourceName":"Telerik.Sitefinity.Modules.Blogs.BlogsManager","Id":"404f4199-5031-4176-b850-76d7d96414e3","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"OpenAccessDataProvider","ProviderTitle":"Default Blogs","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"}],"Name":"Telerik.Sitefinity.Modules.Blogs.BlogsManager","SampleLink":{"DataSourceName":"Telerik.Sitefinity.Modules.Blogs.BlogsManager","Id":"00000000-0000-0000-0000-000000000000","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"apexblogs","ProviderTitle":"Apex Blogs","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"},"Title":"Blogs"},{"AllowMultipleProviders":true,"DependantDataSources":null,"IsChecked":true,"Links":[{"DataSourceName":"Hero Slides","Id":"117d2b84-2c01-4a35-8b61-0576171cf1ab","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"OpenAccessProvider","ProviderTitle":"Apex","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"}],"Name":"Hero Slides","SampleLink":{"DataSourceName":"Hero Slides","Id":"00000000-0000-0000-0000-000000000000","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"apexheroslides","ProviderTitle":"Apex Hero Slides","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"},"Title":"Hero Slides"},{"AllowMultipleProviders":true,"DependantDataSources":[],"IsChecked":true,"Links":[{"DataSourceName":"Telerik.Sitefinity.Modules.News.NewsManager","Id":"5cda998a-8c51-41ba-963b-0db3477e4e5d","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"OpenAccessDataProvider","ProviderTitle":"Default News","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"}],"Name":"Telerik.Sitefinity.Modules.News.NewsManager","SampleLink":{"DataSourceName":"Telerik.Sitefinity.Modules.News.NewsManager","Id":"00000000-0000-0000-0000-000000000000","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"apexnews","ProviderTitle":"Apex News","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"},"Title":"News"},{"AllowMultipleProviders":true,"DependantDataSources":[],"IsChecked":true,"Links":[{"DataSourceName":"Telerik.Sitefinity.Modules.Lists.ListsManager","Id":"3ec979c2-a6ce-4cc8-bf59-742091a8ab91","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"OpenAccessDataProvider","ProviderTitle":"Default Lists","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"}],"Name":"Telerik.Sitefinity.Modules.Lists.ListsManager","SampleLink":{"DataSourceName":"Telerik.Sitefinity.Modules.Lists.ListsManager","Id":"00000000-0000-0000-0000-000000000000","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"apexlists","ProviderTitle":"Apex Lists","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"},"Title":"Lists"},{"AllowMultipleProviders":true,"DependantDataSources":[],"IsChecked":true,"Links":[{"DataSourceName":"Telerik.Sitefinity.Modules.GenericContent.ContentManager","Id":"5f8f245d-c542-4624-a018-5fd6c8676c34","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"OpenAccessDataProvider","ProviderTitle":"Default Content","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"}],"Name":"Telerik.Sitefinity.Modules.GenericContent.ContentManager","SampleLink":{"DataSourceName":"Telerik.Sitefinity.Modules.GenericContent.ContentManager","Id":"00000000-0000-0000-0000-000000000000","IsDefault":true,"IsGlobalProvider":false,"ProviderName":"apexgenericcontent","ProviderTitle":"Apex GenericContent","SiteId":"8e0216c3-d21e-4e5e-8fe6-ea0327f188f7"},"Title":"GenericContent"}]}</cmis:value>
+      </cmis:propertyString>
+    </cmis:properties>
+  </cmisra:object>
+</atom:entry>

@@ -1930,6 +1930,7 @@
     <Content Include="ResourcePackages\Apex\MVC\Views\SocialLinks\Footer.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\SocialLinks\Header.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\ContactInfo\Index.cshtml" />
+    <Content Include="ResourcePackages\Apex\MVC\Views\Slide\List.Hero.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
