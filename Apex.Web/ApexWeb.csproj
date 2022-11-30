@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Apex.Web</RootNamespace>
-    <AssemblyName>Apex.Web</AssemblyName>
+    <RootNamespace>ApexWeb</RootNamespace>
+    <AssemblyName>ApexWeb</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -1127,6 +1127,7 @@
     <Content Include="App_Data\RadCaptcha\Y.wav" />
     <Content Include="App_Data\RadCaptcha\Z.wav" />
     <Content Include="App_Data\Sitefinity\TrackingConsent\consentDialog.html" />
+    <Content Include="Global.asax" />
     <Content Include="ResourcePackages\Apex\assets\src\css\bootstrap.min.css" />
     <Content Include="ResourcePackages\Apex\assets\src\css\style.css" />
     <Content Include="ResourcePackages\Apex\assets\src\img\about.jpg" />
@@ -1310,8 +1311,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="App_Start\SitefinityConfig.cs" />
     <Compile Include="AzureWebRole.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Mvc\Controllers\ContactInfoController.cs" />
+    <Compile Include="Mvc\Models\ContactInfoModel.cs" />
+    <Compile Include="Mvc\Controllers\SocialLinksController.cs" />
+    <Compile Include="Mvc\Models\SocialLinksModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sitefinity\Custom\DevModeActionInvoker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminApp\vendor.f2de03718af186fd.js.map" />
@@ -1508,6 +1518,9 @@
     <Content Include="ResourcePackages\Apex\assets\src\scss\bootstrap\scss\_type.scss" />
     <Content Include="ResourcePackages\Apex\assets\src\scss\bootstrap\scss\_utilities.scss" />
     <Content Include="ResourcePackages\Apex\assets\src\scss\bootstrap\scss\_variables.scss" />
+    <Content Include="Mvc\Views\SocialLinks\Header.cshtml" />
+    <Content Include="Mvc\Views\SocialLinks\Footer.cshtml" />
+    <Content Include="Mvc\Views\ContactInfo\Index.cshtml" />
     <None Include="packages.config" />
     <Content Include="Sitefinity\ExternalLibraries\LibWebP\libwebp_x86.sflib" />
     <Content Include="Sitefinity\ExternalLibraries\LibWebP\libwebp_x64.sflib" />
@@ -1855,7 +1868,6 @@
     <Content Include="ResourcePackages\Apex\MVC\Views\JavaScript\Index.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\LanguageSelector\LanguageSelector.DropDownMenu.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\LanguageSelector\LanguageSelector.LanguageLinks.cshtml" />
-    <Content Include="ResourcePackages\Apex\MVC\Views\Layouts\main.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\Lists\Detail.DetailPage.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\Lists\List.AnchorList.cshtml" />
     <Content Include="ResourcePackages\Apex\MVC\Views\Lists\List.ExpandableList.cshtml" />
@@ -1914,6 +1926,10 @@
     <Content Include="ResourcePackages\Apex\razorgenerator.directives" />
     <Content Include="ResourcePackages\Apex\README.md" />
     <Content Include="ResourcePackages\Apex\assets\src\css\backend\page-editor.css" />
+    <Content Include="ResourcePackages\Apex\MVC\Views\Layouts\base.cshtml" />
+    <Content Include="ResourcePackages\Apex\MVC\Views\SocialLinks\Footer.cshtml" />
+    <Content Include="ResourcePackages\Apex\MVC\Views\SocialLinks\Header.cshtml" />
+    <Content Include="ResourcePackages\Apex\MVC\Views\ContactInfo\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
