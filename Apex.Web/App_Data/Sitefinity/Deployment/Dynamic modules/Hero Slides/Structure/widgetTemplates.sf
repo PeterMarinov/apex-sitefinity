@@ -1,0 +1,38 @@
+[
+  {
+    "ControlType": "Telerik.Sitefinity.Frontend.DynamicContent.Mvc.Controllers.DynamicContentController",
+    "FriendlyControlName": "Hero Slides - Slides - single (MVC)",
+    "IsDifferentFromEmbedded": true,
+    "ResourceClassId": null,
+    "AreaName": "Hero Slides - Slide",
+    "Condition": "Telerik.Sitefinity.DynamicTypes.Model.HeroSlides.Slide AND MVC",
+    "NameForDevelopers": "Detail-Slide",
+    "Id": "ba6e1ce7-214f-4ec8-a4ac-c2bb5e8b055f",
+    "Name": "Detail.Slide",
+    "Theme": null,
+    "DataType": "ASP_NET_TEMPLATE",
+    "Data": "@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel\r\n\r\n@using System.Collections;\r\n@using System.Linq;\r\n@using Telerik.Sitefinity.Frontend.DynamicContent.WidgetTemplates.Fields.Helpers;\r\n@using Telerik.Sitefinity;\r\n@using Telerik.Sitefinity.Data.ContentLinks;\r\n@using Telerik.Sitefinity.Frontend.Mvc.Helpers;\r\n@using Telerik.Sitefinity.Libraries.Model;\r\n@using Telerik.Sitefinity.Localization;\r\n@using Telerik.Sitefinity.Model;\r\n@using Telerik.Sitefinity.Model.ContentLinks;\r\n@using Telerik.Sitefinity.Modules.Pages;\r\n@using Telerik.Sitefinity.Pages.Model;\r\n\r\n<div class=\"@Model.CssClass\" @Html.InlineEditingAttributes(Model.ProviderName, Model.ContentType.FullName, (Guid)Model.Item.Fields.Id)>\r\n    <h3 @Html.InlineEditingFieldAttributes(\"Title\", \"ShortText\")>\r\n        @Model.Item.Fields.Title\r\n    </h3>\r\n    <div>\r\n        @Model.Item.GetDateTime(\"PublicationDate\", \"MMM d, yyyy, HH:mm tt\")\r\n        @Html.CommentsCount(\"\", @Model.Item.DataItem)\r\n    </div>\r\n    \r\n    \r\n@*Start Title field*@\r\n<div>\r\n    <strong> Title :</strong>\r\n\r\n    <span @Html.InlineEditingFieldAttributes(\"Title\", \"ShortText\")>@Model.Item.Fields.Title</span>    \r\n</div>\r\n@*End Title field*@\r\n\r\n@*Start Teaser field*@\r\n<div>\r\n    <strong> Heading Teaser :</strong>\r\n\r\n    <span @Html.InlineEditingFieldAttributes(\"Teaser\", \"ShortText\")>@Model.Item.Fields.Teaser</span>    \r\n</div>\r\n@*End Teaser field*@\r\n\r\n@*Start Heading field*@\r\n<div>\r\n    <strong> Main Heading :</strong>\r\n\r\n    <span @Html.InlineEditingFieldAttributes(\"Heading\", \"ShortText\")>@Model.Item.Fields.Heading</span>    \r\n</div>\r\n@*End Heading field*@\r\n\r\n@*Start MoreDetailsUrl field*@\r\n<div>\r\n    <strong> More details url :</strong>\r\n\r\n    <span @Html.InlineEditingFieldAttributes(\"MoreDetailsUrl\", \"ShortText\")>@Model.Item.Fields.MoreDetailsUrl</span>    \r\n</div>\r\n@*End MoreDetailsUrl field*@\r\n\r\n@*Start Tags field*@\r\n<div>\r\n    <strong> Tags :</strong>\r\n\r\n    @if(Model.Item.Fields.Tags!=null)\r\n    {\r\n    <ul @Html.InlineEditingFieldAttributes(\"Tags\", \"FlatTaxon\")>\r\n    @foreach (var taxon in Model.Item.GetFlatTaxons(\"Tags\"))\r\n    {\r\n        <li>@taxon.Title.ToString()</li>   \r\n    }\r\n    </ul>\r\n    }\r\n</div>\r\n@*End Tags field*@\r\n\r\n@*Start Image field*@\r\n@if(Model.Item.Fields.Image != null)\r\n{\r\n    <img src='@Model.Item.Fields.Image.Fields.MediaUrl' alt='@Model.Item.Fields.Image.Fields.AlternativeText' title='@Model.Item.Fields.Image.Fields.Title' />\r\n}\r\n@*End Image field*@\r\n    \r\n\r\n    @Html.CommentsList(@Model.Item.DataItem)\r\n</div>",
+    "DateCreated": "2022-11-30T07:42:14.703Z",
+    "ResourceAssemblyName": "Telerik.Sitefinity.Resources",
+    "EmbeddedTemplateName": null,
+    "Owner": "a8996669-d3d7-4eb6-af80-993a441d341b"
+  },
+  {
+    "ControlType": "Telerik.Sitefinity.Frontend.DynamicContent.Mvc.Controllers.DynamicContentController",
+    "FriendlyControlName": "Hero Slides - Slides - list (MVC)",
+    "IsDifferentFromEmbedded": true,
+    "ResourceClassId": null,
+    "AreaName": "Hero Slides - Slide",
+    "Condition": "Telerik.Sitefinity.DynamicTypes.Model.HeroSlides.Slide AND MVC",
+    "NameForDevelopers": "List-Slide",
+    "Id": "1fb675d2-095c-4623-b64d-d2b71fae9f2f",
+    "Name": "List.Slide",
+    "Theme": null,
+    "DataType": "ASP_NET_TEMPLATE",
+    "Data": "@model Telerik.Sitefinity.Frontend.DynamicContent.Mvc.Models.DynamicContentListViewModel\r\n\r\n@using Telerik.Sitefinity.Frontend.DynamicContent.WidgetTemplates.Fields.Helpers;\r\n@using Telerik.Sitefinity;\r\n@using Telerik.Sitefinity.Data.ContentLinks;\r\n@using Telerik.Sitefinity.Frontend.Mvc.Helpers;\r\n@using Telerik.Sitefinity.Frontend.Mvc.Models;\r\n@using Telerik.Sitefinity.Web.DataResolving;\r\n@using Telerik.Sitefinity.Model.ContentLinks;\r\n@using Telerik.Sitefinity.Modules.Pages;\r\n\r\n<div class=\"@Model.CssClass\">\r\n    <ul>\r\n        @foreach (var item in Model.Items)\r\n        {\r\n            var navigateUrl = HyperLinkHelpers.GetDetailPageUrl(item, ViewBag.DetailsPageId, ViewBag.OpenInSamePage, Model.UrlKeyPrefix);\r\n            <li @Html.InlineEditingAttributes(Model.ProviderName, Model.ContentType.FullName, (Guid)item.Fields.Id)>\r\n                \r\n\r\n                <h3>\r\n                    <a @Html.InlineEditingFieldAttributes(\"Title\", \"ShortText\") href=\"@navigateUrl\">\r\n                        @item.Fields.Title\r\n                    </a>\r\n                </h3>\r\n                <div>\r\n                    @item.GetDateTime(\"PublicationDate\", \"MMM d, yyyy, HH:mm tt\")\r\n                    @Html.CommentsCount((string)navigateUrl, item.DataItem)\r\n                </div>\r\n            </li>\r\n        }\r\n    </ul>\r\n\r\n    @if (Model.ShowPager)\r\n    {\r\n        @Html.Action(\"Index\", \"ContentPager\", new { currentPage = Model.CurrentPage, \r\n                        totalPagesCount = Model.TotalPagesCount.Value, \r\n                        redirectUrlTemplate = ViewBag.RedirectPageUrlTemplate })\r\n    }\r\n\r\n</div>",
+    "DateCreated": "2022-11-30T07:42:14.703Z",
+    "ResourceAssemblyName": "Telerik.Sitefinity.Resources",
+    "EmbeddedTemplateName": null,
+    "Owner": "a8996669-d3d7-4eb6-af80-993a441d341b"
+  }
+]

@@ -2,6 +2,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 using ApexWeb.Mvc.Models;
+using Progress.Sitefinity.Renderer.Designers.Attributes;
+using Progress.Sitefinity.Renderer.Entities.Content;
 using Telerik.Sitefinity.Mvc;
 
 namespace ApexWeb.Mvc.Controllers
@@ -24,6 +26,9 @@ namespace ApexWeb.Mvc.Controllers
         [Required]
         [Description("Add phone number for contact info")]
         public string PhoneNumber { get; set; } = "+012 345 67890";
+
+        [TaxonomyContent(Type = KnownContentTypes.Tags)]
+        public MixedContentContext Tags { get; set; }
 
 
         [Required]
